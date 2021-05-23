@@ -7,7 +7,7 @@ services:
       - 8080:8080
     tty: true
     volumes:
-      - ./memo:/srv:cached
+      - ./purchase_history:/srv:cached
     working_dir: /srv
 
   db:
