@@ -13,5 +13,5 @@
     ~~~
 * Spring bootアプリの起動
     ~~~shell
-    $ java -jar build/libs/api-0.0.1-SNAPSHOT.jar
+    $ java -jar build/libs/p_history-0.0.1-SNAPSHOT.jar
     ~~~
