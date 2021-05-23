@@ -15,3 +15,5 @@
     ~~~shell
     $ java -jar build/libs/p_history-0.0.1-SNAPSHOT.jar
     ~~~
+    アクセスURL
+    > http://localhost:8080/hello
