@@ -21,11 +21,11 @@ services:
       TZ: 'Asia/Tokyo'
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
-    - ./mysql/data:/var/lib/mysql
-    - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
-    - ./mysql/sql:/docker-entrypoint-initdb.d
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./mysql/sql:/docker-entrypoint-initdb.d
     ports:
-    - 3306:3306
+      - 3306:3306
 
   # phpMyAdmin
   phpmyadmin:
@@ -38,4 +38,3 @@ services:
     - PMA_PASSWORD=root
     ports:
     - 8888:80
-  
