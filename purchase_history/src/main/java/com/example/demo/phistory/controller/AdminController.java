@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AdminController {
 
-    @PersistenceContext(unitName = "SampleUnit")
-    private EntityManager em;
-
     @GetMapping("/admin/index")
     public String adminIndex(Model model) {
         model.addAttribute("message", "Hello Thymeleaf!!");
