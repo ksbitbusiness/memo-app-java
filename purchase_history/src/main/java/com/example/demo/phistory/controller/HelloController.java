@@ -1,4 +1,4 @@
-package com.example.demo.memo.controller;
+package com.example.demo.phistory.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

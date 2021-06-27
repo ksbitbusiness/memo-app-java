@@ -1,4 +1,4 @@
-package com.example.demo.memo.controller;
+package com.example.demo.phistory.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AdminController {
-    
+
+    @PersistenceContext(unitName = "SampleUnit")
+    private EntityManager em;
+
     @GetMapping("/admin/index")
     public String adminIndex(Model model) {
         model.addAttribute("message", "Hello Thymeleaf!!");
@@ -16,6 +19,7 @@ public class AdminController {
     @GetMapping("/admin/login")
     public String adminLogin(Model model) {
         model.addAttribute("message", "Hello Thymeleaf!!");
+
         return "admin/login";
     }
 }

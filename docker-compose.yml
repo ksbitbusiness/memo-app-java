@@ -32,9 +32,9 @@ services:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin_memo_app
     environment:
-    - PMA_ARBITRARY=1
-    - PMA_HOSTS=mysql_memo_app
-    - PMA_USER=root
-    - PMA_PASSWORD=root
+      - PMA_ARBITRARY=1
+      - PMA_HOSTS=mysql_memo_app
+      - PMA_USER=root
+      - PMA_PASSWORD=root
     ports:
-    - 8888:80
+      - 8888:80
