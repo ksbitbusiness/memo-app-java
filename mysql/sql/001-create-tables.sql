@@ -31,3 +31,4 @@ create table IF not exists `histries`
  `created_at`       Datetime NOT NULL,
     PRIMARY KEY (`history_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
