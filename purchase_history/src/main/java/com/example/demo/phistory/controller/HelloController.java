@@ -19,9 +19,9 @@ import com.example.demo.phistory.service.*;
 
 @Controller
 public class HelloController {
-	
-	@PersistenceContext
-	EntityManager entityManager;
+    
+    @PersistenceContext
+    EntityManager entityManager;
 
     @Autowired
     UserService userService;
@@ -33,12 +33,12 @@ public class HelloController {
     }
 
     @GetMapping("/users")
-	public ModelAndView index(ModelAndView mav) {
-		mav.setViewName("hello");
-		mav.addObject("msg","This is a MyData sample.");
-		Iterable list = userService.getUser();
-		mav.addObject("datalist",list);
+    public ModelAndView index(ModelAndView mav) {
+        mav.setViewName("hello");
+        mav.addObject("msg","This is a MyData sample.");
+        Iterable list = userService.getUser();
+        mav.addObject("datalist",list);
         mav.addObject("message", "Hello Thymeleaf!!");
-		return mav;
-	}
+        return mav;
+    }
 }
